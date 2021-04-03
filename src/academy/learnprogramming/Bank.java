@@ -9,6 +9,20 @@ public class Bank {
     private String email;
     private String phoneNumber;
 
+    public Bank(String customerName, String email, String phoneNumber) {
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Bank(int accountNumber, double balance, String customerName, String email, String phoneNumber) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void setAccountNumber(int accNum){
         this.accountNumber = accNum;
     }
